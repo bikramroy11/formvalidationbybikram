@@ -1,0 +1,112 @@
+<html>
+    <head>
+    <title>Form Validation</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <body >
+
+        <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-light text-white m-0"></h1>
+            <div class="btn-group my-5">
+                <a href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/pyBNzX/1578778289271/pure-css-gradient-background-animation.zip" class="btn btn-outline-light" aria-current="page"><i class="fas fa-file-download me-2"></i> </a>
+                <a href="https://codepen.io/P1N2O/full/pyBNzX" class="btn btn-outline-light"><i class="fas fa-expand ms-2"></i></a>
+            </div>
+            <a href="https://manuel.pinto.dev" class="text-decoration-none">
+                <h5 class="fw-light text-white m-0"></h5>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+
+
+     <div>
+        <h1 class="h1" > FORM VALIDATION </h1> <BR>
+<div class="hero">
+    <div class="profile">
+        <img src="profile.png" id="profile"><br>
+        
+        <div class="upload"><input type="file" accept="image/jpg , image/png , image/jpeg" id="input-file" id="inputfile"></div>
+        <p id="errorprofilepic" class="allerror"></p>
+    </div>
+</div>
+
+<label for="input-file">UPDATE IMAGE</label>
+
+        <form action="" onsubmit="return validateform()"  >
+            <br><br><br>  
+            
+<div class="valid">
+      <div class="username">
+         NAME  : <select id="catagory">
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+        </select> 
+            <input type="text" id="uname" placeholder="Bikram Roy" > <BR>
+            <p id="errorname" class="allerror"> </p>
+      </div>
+
+      DATE OF BIRTH : <input type="date" id="date" ><br>
+      <p id="errordate" class="allerror"></p>
+
+      PHONE NO : <input type="number" id="ph" placeholder="9609218475"><br>
+      <p id="errorph" name="alerror"></p>
+
+            EMAIL : <input type="EMAIL" ID="email" placeholder="roybikram1411@gmail.com"  ><br>
+            <p id="erroremail" class="allerror"></p>
+
+            
+
+            ADDRESS :  <textarea row="10" column="30" id="add"></textarea> <br>
+            <p id="erroradd" class="allerror" ></p>
+
+            PIN CODE : <input type="number" id="pin" placeholder="743331"  ><br>
+            <p id="errorpin" class="allerror" ></p>
+
+            AADHAR CARD NO : <input type="number" id="aadhar" placeholder="315064368219"  ><br>
+            <p id="erroraadhar" class="allerror" ></p>
+
+
+            QUALIFICATION : <select id="qua">
+                <option value="-1">Select from below </option>
+                <option value="10">Secondary</option>
+                <option value="12">Higher Secondary</option>
+                <option value="gra">Graduation</option>
+                <option value="pro">Post Graduation</option>
+            </select>
+            <p id="errorqua" class="allerror"></p>
+
+            PASSWORD : <input type="password" id="password" ><br>
+            <p id="errorpassword" class="allerror" ></p>
+            CONFIRM PASSWORD : <input type="password" id="cpassword" ><br>
+            <p id="errorcpassword" class="allerror" ></p>
+</div>
+</div>
+
+
+            <div class="a">
+            <input type="image" src="submit.png" width="100" alt="submit" class="submit">
+            </div>
+            <div class="b">
+            <input type="reset" value="RESET" name="reset" id="reset">
+        </div>
+    </form>      
+<script>
+    /* profile photo */
+    let profilepic = document.getElementById("profile");
+let inputfile = document.getElementById("input-file");
+function validateform(){
+ if(inputfile.value==""){
+    document.getElementById("errorprofilepic").innerHTML("*Please Upload your photo *");
+ }   
+ return false
+}
+inputfile.onchange=function(){
+profilepic.src=URL.createObjectURL(inputfile.files[0])
+    }
+ </script>   
+<script src="type.js"></script>
+</body>
+</html>
