@@ -147,8 +147,8 @@ input[type=file] , input[type=date] {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     border: 8px solid white ;
 }
 
