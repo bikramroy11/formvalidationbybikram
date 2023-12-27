@@ -24,7 +24,6 @@
 
      <div>
         <h1 class="h1" > FORM VALIDATION </h1> <BR>
-                 <form action="" onsubmit="return validateform()"  >
 <div class="hero">
     <div class="profile">
         <img src="profile.png" id="profile"><br>
@@ -36,9 +35,11 @@
 
 <label for="input-file">UPDATE IMAGE</label>
 
-
+        <form action="#" onsubmit="return validateform()" >
             <br><br><br>  
-            
+   
+<table border="1" width="100%" width="100%" bgcolor="red" align="center">
+
 <div class="valid">
       <div class="username">
          NAME  : <select id="catagory">
@@ -46,30 +47,38 @@
             <option value="ms">Ms.</option>
         </select> 
             <input type="text" id="uname" placeholder="Bikram Roy" > <BR>
+            </div>
             <p id="errorname" class="allerror"> </p>
-      </div>
-
+<div class="username">
       DATE OF BIRTH : <input type="date" id="date" ><br>
+</div>
       <p id="errordate" class="allerror"></p>
 
+      <div class="username">
       PHONE NO : <input type="number" id="ph" placeholder="9609218475"><br>
+      </div>
       <p id="errorph" name="alerror"></p>
-
+<div class="username">
             EMAIL : <input type="EMAIL" ID="email" placeholder="roybikram1411@gmail.com"  ><br>
+    </div>
             <p id="erroremail" class="allerror"></p>
 
             
-
+<div class="username">
             ADDRESS :  <textarea row="10" column="30" id="add"></textarea> <br>
+ </div>
             <p id="erroradd" class="allerror" ></p>
 
+            <div class="username">
             PIN CODE : <input type="number" id="pin" placeholder="743331"  ><br>
+         </div>
             <p id="errorpin" class="allerror" ></p>
-
+<div class="username">
             AADHAR CARD NO : <input type="number" id="aadhar" placeholder="315064368219"  ><br>
+ </div>
             <p id="erroraadhar" class="allerror" ></p>
 
-
+<div class="username">
             QUALIFICATION : <select id="qua">
                 <option value="-1">Select from below </option>
                 <option value="10">Secondary</option>
@@ -77,16 +86,22 @@
                 <option value="gra">Graduation</option>
                 <option value="pro">Post Graduation</option>
             </select>
+   </div>
             <p id="errorqua" class="allerror"></p>
 
+            <div class="username">
             PASSWORD : <input type="password" id="password" ><br>
+         </div>
             <p id="errorpassword" class="allerror" ></p>
+          
+          <div class="username">
             CONFIRM PASSWORD : <input type="password" id="cpassword" ><br>
+          </div>
             <p id="errorcpassword" class="allerror" ></p>
 </div>
 </div>
 
-
+</table>
             <div class="a">
             <input type="image" src="submit.png" width="100" alt="submit" class="submit">
             </div>
